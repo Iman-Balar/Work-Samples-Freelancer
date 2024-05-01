@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="img/svg+xml" href="./site-icon/Freelancer.png"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelancer Practice</title>
+    <meta name="author" content="iman-balar"/>
+    <title>Freelancer</title>
     <link href="./css/all.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./css/index.css" rel="stylesheet"/>
@@ -49,38 +51,45 @@
     <div class="just-border5"></div>
     <i class="fa-thin fa-star star3"></i>
     <div class="just-border6"></div>
-    <!-- <div> -->
-    <p class="first-textet text-white">Freelancer is a free bootstrap theme created by</p>
-    <p class="second-textet text-white">Start Bootstrap. The download includes the</p>
-    <p class="third-textet text-white">complete source files including HTML, CSS, and</p>
-    <p class="four-textet text-white">JavaScript as well as optional SASS stylesheets</p>
-    <p class="five-textet text-white">for easy customization.</p>
-    <!-- </div> -->
-    <!-- <div> -->
 
-      <p class="textet1 text-white">You can create your own custom avatar for the</p>
-      <p class="textet2 text-white">masthead, change the icon in the dividers, and</p>
-      <p class="textet3 text-white">add your email address to the contact form to</p>
-      <p class="textet4 text-white">make it fully functional!</p>
+    <p class="paragraph1 text-white">Freelancer is a free bootstrap theme created by 
+      <br>
+      Start Bootstrap. The download includes the
+      <br>
+      complete source files including HTML, CSS, and
+      <br>
+      JavaScript as well as optional SASS stylesheets
+      <br>
+      for easy customization.
+    </p>
+
+    <p class="paragraph2 text-white">You can create your own custom avatar for the
+      <br>
+      masthead, change the icon in the dividers, and
+      <br>
+      add your email address to the contact form to
+      <br>
+      make it fully functional!
+    </p>
 
     <div class="dl-section">
-      <button type="button" class="btn btn-secondary">Free Download</button>
+      <button id="freeDl" type="button" class="btn btn-secondary">Free Download</button>
       <i class="fa-solid fa-download dl"></i>
     </div>
   </article>
     </span>
 
-  <span id="conx">
+  <span>
       <main class="containerr3 d-flex">
-      <p class="cont fw-bold">CONTACT ME</p>
-      <div class="just-border7"></div>
-      <i class="fa-thin fa-star star4"></i>
-      <div class="just-border8"></div>
-      <input type="tel" id="full-name" name="phone" placeholder="Full name" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
-      <input type="tel" id="mail" name="phone" placeholder="Email address" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
-      <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
-      <textarea id="messagee" name="w3review" rows="4" cols="50">Message</textarea>
-      <button class="myBtn" type="button" disabled>Send</button>
+        <p id="conx" class="cont fw-bold">CONTACT ME</p>
+        <div class="just-border7"></div>
+        <i class="fa-thin fa-star star4"></i>
+        <div class="just-border8"></div>
+        <input type="text" id="fullName" placeholder="Full name" autocomplete="off"><br><br>
+        <input type="email" id="mail" placeholder="Email address" autocomplete="off"><br><br>
+        <input type="number" id="phoneNum" placeholder="Phone number" autocomplete="off"><br><br>
+        <textarea id="messagee" name="w3review" rows="4" cols="50" placeholder="Message(optional)"></textarea>
+        <button onclick="clickHandle()" id="send" class="myBtn" type="button">Send</button>
       </main>
   </span>
 
@@ -89,17 +98,20 @@
     <p class="location fw-bold">Location</p>
     <p class="line1">2215 John Daniel Drive</p>
     <p class="line2">Clark, MO 65243</p>
-
     <p class="atw fw-bold">AROUND THE WEB</p>
-    <i class="fa-brands fa-facebook-f fbook"></i>
-    <i class="fa-brands fa-twitter twitter"></i>
+    <a href="https://facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook-f fbook"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <i id="twitter" class="fa-brands fa-twitter twitter"></i>
+    </a>
     <p class="in fw-bold">in</p>
     <i class="fa-light fa-futbol bball"></i>
 
     <p class="af fw-bold">ABOUT FREELANCER</p>
     <p class="num1">Freelance is a free to use, MIT licensed</p>
     <p class="num2">Bootstrap theme created by 
-      <a class="start-bootstrap" href="https://startbootstrap.com/">Start Bootstrap</a> . 
+      <a class="start-bootstrap" href="https://startbootstrap.com/" target="_blank">Start Bootstrap</a> . 
     </p>
   </figcaption>
 
@@ -108,4 +120,5 @@
   </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </html>
