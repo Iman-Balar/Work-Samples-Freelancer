@@ -19,8 +19,8 @@ function clickHandle(){
     const resultOfNumber = phoneRegex.test(phoneNum.value);
     
     if(resultOfName && resultOfMail && resultOfNumber == true){
-        alert("it's ok")
+        alert("it's ok ✅")
     }else{
-        alert("Please complete the form")
+        alert("❌ Please complete the form!")
     }
 }

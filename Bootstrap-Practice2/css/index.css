@@ -390,6 +390,7 @@ html , body{
     border-left: 0;
     border-right: 0;
     outline: none;
+    border-radius: 10px;
 }
 
 #mail{
@@ -405,6 +406,7 @@ html , body{
     border-left: 0;
     border-right: 0;
     outline: none;
+    border-radius: 10px;
 }
 
 #phoneNum{
@@ -420,7 +422,7 @@ html , body{
     border-left: 0;
     border-right: 0;
     outline: none;
-    appearance: none;
+    border-radius: 10px;
 }
 
 #phoneNum::-webkit-outer-spin-button,
@@ -443,6 +445,7 @@ html , body{
     padding-bottom: 130px;
     overflow: hidden;
     outline: none;
+    border-radius: 10px
 }
 
 .myBtn{
